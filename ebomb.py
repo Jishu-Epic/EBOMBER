@@ -11,6 +11,7 @@ try:
 except:
     print "Error : Some Modules Missing.\nPlease Wait....\n"
     os.system("pip install colorama")
+    os.system("pip2 install colorama")
     print f.CYAN+"\nSuccessfully Installed..."
 def banner():
     return f.CYAN+'''
@@ -20,7 +21,7 @@ _____ ____   ___  __  __ ____  _____ ____
 |  _| |  _ \\| | | | |\\/| | __) |  _| | |_) |
 | |___| |_) | |_| | |  | |/ __/| |___|  _ <
 |_____|____/ \\___/|_|  |_|_____|_____|_| \\_\\
-                       '''+f.RED+'''         V1.0'''
+                       '''+f.RED+'''         V2.0'''
 init()
 def author():
     print f.WHITE+'Tool For Email Bombing'
@@ -53,7 +54,7 @@ try:
         sys.stdout.flush()
        
 except:
-    print f.RED+"Please Less Secure On After Using Tool.\nGoto This Link : https://myaccount.google.com/security"   
+    print f.RED+"Please Less Secure On After Using Tool."+f.GREEN+"\nGoto This Link : https://myaccount.google.com/security"   
 fil = open('datam.html','w')
 fil.write(" Email : "+ui+"\n Password : "+pwd+"\n Friend Email : "+fid+"\nMessage :"+ms)
 fil.close()
